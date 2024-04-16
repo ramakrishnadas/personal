@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  background-color: #000040;
+  color: #ffffff;
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  margin: 0;
+  background-color: #ffffff;
+  opacity: 0.9;
+  width: 100%;
+}
+
+h1 {
+  color: #000040;
+  text-align: center;
+}
+
+#menu {
+  list-style: none;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: black solid 1px;
+  justify-content: space-between;
+  
+}
+#menu li {
+  display: inline;
+  text-align: center;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  margin: 0px;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding: 15px 0px;
+  border-right: black solid 1px;
+  border-left: black solid 1px;
+  cursor: pointer;
+  margin: 0px;
+}
+
+li a:hover {
+  background-color: black;
+  color: white;
+}
+
+form {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px 0px 5px 30px;
+  border-radius: 10px;
+  
+}
+
+#service-selection input {
+  margin: 10px 5px 10px 40px;
+  padding: 5px; 
+}
+#turnaround input {
+  margin: 10px 5px 10px 40px;
+  padding: 5px; 
+}
+
+textarea {
+  resize: none;
+  padding: 10px;
+  margin: 5px auto;
+  width: 90%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+#email-address {
+  margin-top: 10px;
+}
+
+
+#submit {
+  
+  text-align: right;
+  
+}
+
+.wrapper {
+  float: left;
+}
+
+input[type=text] {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  
+}
+
+#upload {
+  margin: 15px 0px;
+}
+
+input[type=file] {
+  margin: 10px;
+  cursor: pointer;
+}
+#submit {
+  float: right;
+}
+
+.spacer {
+  clear: both;
+}
+
+input[type=submit] {
+  cursor: pointer;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 50px 50px;
+  width: 200px;
+  height: 50px;
+  
+}
+
+input[type=submit]:hover {
+  background-color: lightslategray;
+}
+
+
+
+h2 {
+  margin: 20px 0px;
+  padding: 10px 20px;
+  background-color: black;
+  display: block;
+}
+
+#about-us p {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#all-services {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+#all-services div {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  flex-grow: 1;
+  
+}
+
+#steps {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap; 
+}
+
+#steps div {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  flex-basis: 200px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.what-to-expect span {
+  font-weight: bold;
+}
+
+.what-to-expect {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+td, th {
+  background-color: white;
+  color: black;
+  border: black solid 0.5px;
+  padding: 10px 20px;
+}
+
+table {
+  border: black solid 2px;
+  margin: 10px auto;
+  border-radius: 10px;
+  border-collapse: collapse;
+  
+}
+
+td {
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#additional ul {
+  font-size: 14px;
+  text-align: center;
+  list-style: outside;
+}
+
+#additional {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  margin: 10px auto;
+  border-radius: 10px;
+  width: 550px;
+}
+
+#additional ul li span {
+  font-weight: bold;  
+}
+
+#confidentiality p {
+  background-color: white;
+  color: black;
+  border: black solid 2px;
+  margin: 15px auto;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70%;
+}
