@@ -1,0 +1,22 @@
+<%- include('partials/header.ejs') %>
+    <h1>My Blog</h1>
+
+    <% locals.blogs.forEach( (blog) => { %>
+        <article class="blog-post my-5">
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <h2 class="display-5 link-body-emphasis mb-1"><%= blog.title %></h2>
+                    <p class="blog-post-meta mt-4"><%= blog.date %> by <strong><%= blog.author %></strong></p>
+                </div>
+                <form method="post" action="/delete/<%= blogs.indexOf(blog) %>">
+                    <a class="mx-2" href="/edit/<%= blogs.indexOf(blog) %>">Edit</a>
+            
+                    <button class="ms-1 btn btn-danger btn-sm">X</button>
+                </form>
+            </div>
+            <p><%= blog.content %></p>
+        </article>
+        <hr>
+    <% }) %>
+    
+    <%- include('partials/footer.ejs') %>

@@ -1,0 +1,17 @@
+<%- include('partials/header.ejs') %>
+<h1>Create New Blog</h1>
+
+<div class="container">
+    <form action="/update" method="post">
+        <label for="title" class="form-label">Title: </label>
+        <input type="text" name="title" id="title" class="form-control" value="<%= locals.blog.title %>"><br>
+        <label for="author" class="form-label">Author:</label>
+        <input type="text" name="author" id="author" class="form-control" value="<%= locals.blog.author %>"><br>
+        <label for="content" class="form-label">Content:</label>
+        <textarea name="content" id="content" class="form-control" rows="10"><%= locals.blog.content %></textarea><br>
+        <input type="submit" value="Save" class="btn btn-primary btn-lg">
+        <input type="hidden" name="index" id="index" value="<%= locals.index %>">
+    </form>
+</div>
+
+<%- include('partials/footer.ejs') %>
